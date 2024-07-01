@@ -7,7 +7,7 @@
         "UpdateSourceArgs": "1366540",
         "UnzipUpdateSource": false,
         "ForceDownloadPlatform": "Windows",
-        "OverwriteExistingFiles": true,
+        "OverwriteExistingFiles": false,
         "DeleteAfterExtract": true,
         "OneShot": false
     },
@@ -19,7 +19,7 @@
         "UpdateSourceArgs": "NebulaModTeam/nebula",
         "UpdateSourceTarget": "\\BepInEx\\plugins\\",
         "UnzipUpdateSource": true,
-        "OverwriteExistingFiles": true,
+        "OverwriteExistingFiles": false,
         "UpdateSourceConditionSetting": "BepInExDownload",
         "DeleteAfterExtract": true,
         "OneShot": false
@@ -30,7 +30,7 @@
         "UpdateSource": "FetchURL",
         "UpdateSourceData": "https://thunderstore.io/package/download/xiaoye97/BepInEx/5.4.17/",
         "UnzipUpdateSource": true,
-        "OverwriteExistingFiles": true,
+        "OverwriteExistingFiles": false,
         "UpdateSourceConditionSetting": "GameDownload",
         "DeleteAfterExtract": true,
         "OneShot": false
@@ -42,7 +42,7 @@
         "UpdateSourceData": "https://thunderstore.io/package/download/nebula/NebulaMultiplayerModApi/2.0.0/",
         "UpdateSourceTarget": "\\BepInEx\\plugins\\",
         "UnzipUpdateSource": true,
-        "OverwriteExistingFiles": true,
+        "OverwriteExistingFiles": false,
         "UpdateSourceConditionSetting": "BepInExDownload",
         "DeleteAfterExtract": true,
         "OneShot": false
@@ -54,7 +54,7 @@
         "UpdateSourceData": "https://thunderstore.io/package/download/PhantomGamers/IlLine/1.0.0/",
         "UpdateSourceTarget": "\\BepInEx\\plugins\\",
         "UnzipUpdateSource": true,
-        "OverwriteExistingFiles": true,
+        "OverwriteExistingFiles": false,
         "UpdateSourceConditionSetting": "BepInExDownload",
         "DeleteAfterExtract": true,
         "OneShot": false
