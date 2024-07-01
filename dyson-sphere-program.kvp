@@ -4,6 +4,7 @@ Meta.Arch=x86_64
 Meta.Author=FireQuartz - Made with AMP Config Generator
 Meta.URL=
 Meta.MinAMPVersion=2.4.6.6
+Meta.AppConfigId=a905745a-7a8a-4c85-8b89-fa141e2643a5
 Meta.SpecificDockerImage=cubecoders/ampbase:wine
 Meta.DockerRequired=False
 Meta.ContainerPolicy=Supported
