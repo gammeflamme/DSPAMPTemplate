@@ -1,0 +1,12 @@
+[
+    {
+        "ConfigFile": "BepInEx/config/BepInEx.cfg",
+        "ConfigType": "json",
+        "AutoMap": true
+    },
+    {
+        "ConfigFile": "BepInEx\\config\\nebula.cfg",
+        "ConfigType": "json",
+        "AutoMap": true
+    }
+]
