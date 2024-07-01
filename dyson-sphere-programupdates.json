@@ -36,7 +36,6 @@
         "UpdateSourceData": "https://thunderstore.io/package/download/xiaoye97/BepInEx/5.4.17/",
         "UnzipUpdateSource": true,
         "OverwriteExistingFiles": false,
-        "UpdateSourceConditionSetting": "GameDownload",
         "DeleteAfterExtract": true,
         "OneShot": false
     },
@@ -49,7 +48,6 @@
         "UpdateSourceTarget": "\\BepInEx\\plugins\\",
         "UnzipUpdateSource": true,
         "OverwriteExistingFiles": false,
-        "UpdateSourceConditionSetting": "BepInExDownload",
         "DeleteAfterExtract": true,
         "OneShot": false
     },
@@ -62,7 +60,6 @@
         "UpdateSourceTarget": "\\BepInEx\\plugins\\",
         "UnzipUpdateSource": true,
         "OverwriteExistingFiles": false,
-        "UpdateSourceConditionSetting": "BepInExDownload",
         "DeleteAfterExtract": true,
         "OneShot": false
     },
@@ -74,7 +71,6 @@
         "UpdateSourceTarget": "\\BepInEx\\plugins\\",
         "UnzipUpdateSource": true,
         "OverwriteExistingFiles": false,
-        "UpdateSourceConditionSetting": "BepInExDownload",
         "DeleteAfterExtract": true,
         "OneShot": false
     },
@@ -86,7 +82,6 @@
         "UpdateSourceTarget": "\\1366540\\plugins\\",
         "UnzipUpdateSource": true,
         "OverwriteExistingFiles": true,
-        "UpdateSourceConditionSetting": "BepInExDownload",
         "DeleteAfterExtract": true,
         "OneShot": false
     }
