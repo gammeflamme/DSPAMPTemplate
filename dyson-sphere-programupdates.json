@@ -1,4 +1,17 @@
 [
+
+    {
+        "UpdateStageName": "ProtonDownload",
+        "UpdateSourcePlatform": "Linux",
+        "UpdateSource": "SteamCMD",
+        "UpdateSourceData": "1580130",
+        "UpdateSourceArgs": "1580130",
+        "UnzipUpdateSource": false,
+        "OverwriteExistingFiles": false,
+        "DeleteAfterExtract": true,
+        "OneShot": false
+    },
+
     {
         "UpdateStageName": "GameDownload",
         "UpdateSourcePlatform": "ALL",
@@ -8,6 +21,7 @@
         "UnzipUpdateSource": false,
         "ForceDownloadPlatform": "Windows",
         "OverwriteExistingFiles": false,
+        "UpdateSourceConditionSetting": "ProtonDownload",
         "DeleteAfterExtract": true,
         "OneShot": false
     },
