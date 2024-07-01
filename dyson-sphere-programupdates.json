@@ -34,6 +34,7 @@
         "UpdateSource": "FetchURL",
         "UpdateSourceData": "https://thunderstore.io/package/download/xiaoye97/BepInEx/5.4.17/",
         "UnzipUpdateSource": true,
+        "UpdateSourceTarget": "\\BepInEx\\",
         "OverwriteExistingFiles": false,
         "DeleteAfterExtract": true,
         "OneShot": false
