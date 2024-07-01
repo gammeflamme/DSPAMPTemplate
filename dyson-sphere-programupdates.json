@@ -1,15 +1,14 @@
 [
 
-    {
-        "UpdateStageName": "ProtonDownload",
-        "UpdateSourcePlatform":"Linux",
-        "UpdateSource":"Executable",
-        "UpdateSourceData":"/bin/bash",
-        "UpdateSourceConditionSetting":"ProtonRelease",
-        "UpdateSourceConditionValue":"latest",
-        "SkipOnFailure":false
-    },
 
+    {
+        "UpdateStageName":"SteamCMDDownload",
+        "UpdateSourcePlatform":"All",
+        "UpdateSource":"SteamCMD",
+        "UpdateSourceData":"2278520",
+        "UpdateSourceArgs":"1203620",
+        "ForceDownloadPlatform":"Windows"
+    },
     {
         "UpdateStageName": "GameDownload",
         "UpdateSourcePlatform": "ALL",
@@ -23,17 +22,24 @@
         "OneShot": false
     },
     {
-        "UpdateStageName": "NebulaMultiplayerDownload",
-        "UpdateSourcePlatform": "All",
-        "UpdateSource": "FetchURL",
-        "UpdateSourceData": "https://thunderstore.io/package/download/nebula/NebulaMultiplayerMod/0.9.5/",
-        "UpdateSourceArgs": "NebulaModTeam/nebula",
-        "UpdateSourceTarget": "\\BepInEx\\plugins\\",
-        "UnzipUpdateSource": true,
-        "OverwriteExistingFiles": false,
-        "UpdateSourceConditionSetting": "BepInExDownload",
-        "DeleteAfterExtract": true,
-        "OneShot": false
+        "UpdateStageName":"Proton GE Download",
+        "UpdateSourcePlatform":"Linux",
+        "UpdateSource":"Executable",
+        "UpdateSourceData":"/bin/bash",
+        "UpdateSourceArgs":"-c 'mkdir -p \"{{$FullRootDir}}.proton/compatdata\" \"{{$FullBaseDir}}.steam/steam\" \"{{$FullBaseDir}}.steam/sdk32\" \"{{$FullBaseDir}}.steam/sdk64\" && \\cp -f \"{{$FullRootDir}}linux32/steamclient.so\" \"{{$FullBaseDir}}.steam/sdk32/\" && \\cp -f \"{{$FullRootDir}}linux64/steamclient.so\" \"{{$FullBaseDir}}.steam/sdk64/\" && rm -rf \"{{$FullRootDir}}.proton/compatdata/\"* >/dev/null 2>&1 && wget -q \"$(wget -qO- https://api.github.com/repos/GloriousEggroll/proton-ge-custom/releases/latest | grep browser_download_url | cut -d\\\" -f4 | grep .tar.gz)\" && tar -xzf GE-Proton*.tar.gz -C \"{{$FullRootDir}}.proton\" --strip-components=1 ; rm GE-Proton*.* && { STEAM_COMPAT_DATA_PATH=\"{{$FullRootDir}}.proton/compatdata\" STEAM_COMPAT_CLIENT_INSTALL_PATH=\"{{$FullBaseDir}}.steam/steam\" {{$FullRootDir}}.proton/proton PROTON_LOG=1 >/dev/null 2>&1; exit 0; }'",
+        "UpdateSourceConditionSetting":"ProtonRelease",
+        "UpdateSourceConditionValue":"latest",
+        "SkipOnFailure":false
+    },
+    {
+        "UpdateStageName":"Proton GE Download",
+        "UpdateSourcePlatform":"Linux",
+        "UpdateSource":"Executable",
+        "UpdateSourceData":"/bin/bash",
+        "UpdateSourceArgs":"-c 'mkdir -p \"{{$FullRootDir}}.proton/compatdata\" \"{{$FullBaseDir}}.steam/steam\" \"{{$FullBaseDir}}.steam/sdk32\" \"{{$FullBaseDir}}.steam/sdk64\" && \\cp -f \"{{$FullRootDir}}linux32/steamclient.so\" \"{{$FullBaseDir}}.steam/sdk32/\" && \\cp -f \"{{$FullRootDir}}linux64/steamclient.so\" \"{{$FullBaseDir}}.steam/sdk64/\" && rm -rf \"{{$FullRootDir}}.proton/compatdata/\"* >/dev/null 2>&1 && wget -q \"https://github.com/GloriousEggroll/proton-ge-custom/releases/download/{{SpecificReleaseVersion}}/{{SpecificReleaseVersion}}.tar.gz\" && tar -xzf GE-Proton*.tar.gz -C \"{{$FullRootDir}}.proton\" --strip-components=1 ; rm GE-Proton*.* && { STEAM_COMPAT_DATA_PATH=\"{{$FullRootDir}}.proton/compatdata\" STEAM_COMPAT_CLIENT_INSTALL_PATH=\"{{$FullBaseDir}}.steam/steam\" {{$FullRootDir}}.proton/proton PROTON_LOG=1 >/dev/null 2>&1; exit 0; }'",
+        "UpdateSourceConditionSetting":"ProtonRelease",
+        "UpdateSourceConditionValue":"specificversion",
+        "SkipOnFailure":false
     },
     {
         "UpdateStageName": "BepInEXDownload",
@@ -47,7 +53,21 @@
         "OneShot": false
     },
     {
-        "UpdateStageName": "NebulaMultiplayerModApiDownload",
+        "UpdateStageName": "ModDownload",
+        "UpdateSourcePlatform": "All",
+        "UpdateSource": "FetchURL",
+        "UpdateSourceData": "https://thunderstore.io/package/download/nebula/NebulaMultiplayerMod/0.9.5/",
+        "UpdateSourceArgs": "NebulaModTeam/nebula",
+        "UpdateSourceTarget": "\\BepInEx\\plugins\\",
+        "UnzipUpdateSource": true,
+        "OverwriteExistingFiles": false,
+        "UpdateSourceConditionSetting": "BepInExDownload",
+        "DeleteAfterExtract": true,
+        "OneShot": false
+    },
+
+    {
+        "UpdateStageName": "ModDownload",
         "UpdateSourcePlatform": "All",
         "UpdateSource": "FetchURL",
         "UpdateSourceData": "https://thunderstore.io/package/download/nebula/NebulaMultiplayerModApi/2.0.0/",
@@ -59,7 +79,7 @@
         "OneShot": false
     },
     {
-        "UpdateStageName": "IlLineDownload",
+        "UpdateStageName": "ModDownload",
         "UpdateSourcePlatform": "All",
         "UpdateSource": "FetchURL",
         "UpdateSourceData": "https://thunderstore.io/package/download/PhantomGamers/IlLine/1.0.0/",
@@ -71,7 +91,7 @@
         "OneShot": false
     },
     {
-        "UpdateStageName": "BulletTimeDownload",
+        "UpdateStageName": "ModDownload",
         "UpdateSourcePlatform": "All",
         "UpdateSource": "FetchURL",
         "UpdateSourceData": "https://thunderstore.io/package/download/starfi5h/BulletTime/1.4.7/",
