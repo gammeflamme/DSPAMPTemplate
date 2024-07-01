@@ -1,11 +1,11 @@
 [
 
     {
-        "UpdateStageName": "ProtonDownload",
+        "UpdateStageName": "Proton9Download",
         "UpdateSourcePlatform": "Linux",
         "UpdateSource": "SteamCMD",
-        "UpdateSourceData": "1580130",
-        "UpdateSourceArgs": "1580130",
+        "UpdateSourceData": "2805730",
+        "UpdateSourceArgs": "2805730",
         "UnzipUpdateSource": false,
         "OverwriteExistingFiles": false,
         "DeleteAfterExtract": true,
