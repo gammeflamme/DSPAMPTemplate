@@ -2,14 +2,6 @@
 
 
     {
-        "UpdateStageName": "GameDownload",
-        "UpdateSourcePlatform": "ALL",
-        "UpdateSource": "SteamCMD",
-        "UpdateSourceData": "1366540",
-        "UpdateSourceArgs": "1366540",
-        "ForceDownloadPlatform": "Windows"
-    },
-    {
         "UpdateStageName":"Proton GE Download",
         "UpdateSourcePlatform":"Linux",
         "UpdateSource":"Executable",
@@ -28,6 +20,14 @@
         "UpdateSourceConditionSetting":"ProtonRelease",
         "UpdateSourceConditionValue":"specificversion",
         "SkipOnFailure":false
+    },
+    {
+        "UpdateStageName": "GameDownload",
+        "UpdateSourcePlatform": "ALL",
+        "UpdateSource": "SteamCMD",
+        "UpdateSourceData": "1366540",
+        "UpdateSourceArgs": "1366540",
+        "ForceDownloadPlatform": "Windows"
     },
     {
         "UpdateStageName": "BepInEXDownload",
