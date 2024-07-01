@@ -7,11 +7,7 @@
         "UpdateSource": "SteamCMD",
         "UpdateSourceData": "1366540",
         "UpdateSourceArgs": "1366540",
-        "UnzipUpdateSource": false,
-        "ForceDownloadPlatform": "Windows",
-        "OverwriteExistingFiles": false,
-        "DeleteAfterExtract": true,
-        "OneShot": false
+        "ForceDownloadPlatform": "Windows"
     },
     {
         "UpdateStageName":"Proton GE Download",
